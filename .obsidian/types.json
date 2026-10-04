@@ -1,0 +1,22 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "tags": "tags",
+    "type": "text",
+    "author": "text",
+    "site": "text",
+    "url": "text",
+    "source_kind": "text",
+    "source_published": "text",
+    "captured": "date",
+    "created": "date",
+    "updated": "date",
+    "published": "date",
+    "status": "text",
+    "sources": "multitext",
+    "topics": "multitext",
+    "review_status": "text",
+    "substack_url": "text",
+    "language": "text"
+  }
+}

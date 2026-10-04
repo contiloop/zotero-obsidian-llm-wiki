@@ -1,0 +1,13 @@
+{
+  "attachmentFolderPath": "Assets",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Writing/Drafts",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "livePreview": true,
+  "defaultViewMode": "source",
+  "readableLineLength": true,
+  "promptDelete": true,
+  "trashOption": "local"
+}

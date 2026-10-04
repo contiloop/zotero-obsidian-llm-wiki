@@ -1,0 +1,58 @@
+filters:
+  and:
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: Title
+  note.author:
+    displayName: Author
+  note.url:
+    displayName: Source URL
+  note.source_published:
+    displayName: Published (source)
+  note.captured:
+    displayName: Captured
+  note.updated:
+    displayName: Wiki updated
+  note.review_status:
+    displayName: Review status
+  note.status:
+    displayName: Writing status
+  note.published:
+    displayName: Published
+  note.substack_url:
+    displayName: Published URL
+views:
+  - type: table
+    name: References
+    filters:
+      and:
+        - file.inFolder("References")
+    order:
+      - file.name
+      - author
+      - source_published
+      - captured
+      - url
+  - type: table
+    name: Wiki
+    filters:
+      and:
+        - file.inFolder("Wiki")
+        - note.type == "wiki"
+    order:
+      - file.name
+      - updated
+      - review_status
+      - sources
+  - type: table
+    name: Writing
+    filters:
+      and:
+        - file.inFolder("Writing")
+    order:
+      - file.name
+      - status
+      - created
+      - published
+      - substack_url

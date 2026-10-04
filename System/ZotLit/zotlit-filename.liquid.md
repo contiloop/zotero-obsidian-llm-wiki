@@ -1,0 +1,1 @@
+{{ zt.title | replace: " : 네이버블로그", "" | replace: "/", "-" | replace: ":", " -" | replace: "?", "" | replace: "*", "" | replace: '"', "" | replace: "<", "" | replace: ">", "" | replace: "|", "-" | replace: "#", "" | replace: "^", "" | replace: "[", "(" | replace: "]", ")" | strip | default: zt.key }}{% suffix %}

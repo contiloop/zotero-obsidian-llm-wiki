@@ -1,0 +1,36 @@
+# This repository stores the SETUP only (structure, rules, templates, settings).
+# Content (references, wiki pages, drafts, assets) stays local.
+
+# --- Content folders: keep the folder, ignore what accumulates inside ---
+References/**
+!References/Zotero/
+!References/Zotero/.gitkeep
+Wiki/*
+!Wiki/Index.md
+Writing/Drafts/*
+!Writing/Drafts/.gitkeep
+Writing/Published/*
+!Writing/Published/.gitkeep
+Assets/*
+!Assets/.gitkeep
+
+# --- Obsidian personal state ---
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/cache/
+.trash/
+
+# --- Third-party plugin code (install from the official release; see System/SETUP.md) ---
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+
+# --- OS / secrets / local tools ---
+.DS_Store
+.env
+.env.*
+*.key
+*.pem
+.claude/
+.codex/
+CLAUDE.local.md
+System/.cache/
