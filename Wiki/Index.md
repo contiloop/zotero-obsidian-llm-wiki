@@ -12,4 +12,4 @@ No wiki pages yet. When a page is created or updated, the AI adds a link and a o
 
 ## Navigation
 
-[[System/Library.base|Library]] · [[System/ingest-log|Processing log]] · [[Home]]
+[[System/Library.base|Library]] · [[System/ingest-log|Processing log]] · [[README]]
