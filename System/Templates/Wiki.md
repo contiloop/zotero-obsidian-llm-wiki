@@ -11,20 +11,20 @@ sources: []
 
 ## Summary
 
-<!-- Merge multiple sources without duplication. Separate source claims from AI inference. -->
+<!-- What this topic is and why it matters for the user's writing. -->
 
 ## Facts and evidence
 
-<!-- Each statement: reference date, unit/scope/period for figures, source link and location. -->
+<!-- Claims from sources, each with source link and location. -->
 
-## Counterpoints, changes, open questions
+## Connections
 
-<!-- Keep conflicting sources side by side with dates and conditions. -->
+<!-- How sources and topics relate. Link the draft a connection came from; mark connections not found in any draft as AI inference. -->
+
+## Counterpoints and open questions
+
+<!-- Conflicting evidence side by side with dates. -->
 
 ## Related pages
 
-<!-- Only meaningful links to wiki pages that actually exist. -->
-
 ## Sources
-
-<!-- Links to actual files in References. -->
