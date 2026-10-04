@@ -1,30 +1,23 @@
 # zotero-obsidian-llm-wiki
 
-An Obsidian vault setup for economics writing: collect and highlight sources in Zotero, bring them into Obsidian with ZotLit, and let an AI grow a wiki from your drafts.
+An Obsidian LLM wiki setup for economics writing: collect and highlight sources in Zotero, bring them into Obsidian with ZotLit, and let an AI maintain a wiki from your source notes and drafts.
 
 This repository holds the **setup only** (structure, AI rules, templates, settings). Content stays local. To rebuild it on a new machine, follow [System/SETUP.md](System/SETUP.md).
 
-## Layers
+## Structure
 
-| Layer | Where | Role |
+| Step | Where | Who writes |
 | --- | --- | --- |
-| 0 Collect | Zotero | Save anything that looks important, highlight by color, add comments. Used in writing or not, keep it. |
-| 1 Literature notes | `References/` | One note per source: your highlights, comments and source info. Originals are never edited. |
-| 2 Wiki | `Wiki/` | Topic knowledge that accumulates: compressed and connected across sources (same claim, conflict, cause, change over time), always with sources. |
-| 2.5 Work notes | `Writing/Drafts/` | One folder per article: sources used and why, loose thinking, discarded evidence, outline. The connections you make yourself. |
-| 3 Output | `Writing/Published/` | Published articles, frozen after publishing. |
-
-## Flow
+| 1 Collect | Zotero, or any other way (e.g. a PDF saved directly) | You: save sources, highlight by color, add comments |
+| 2 Source notes | `References/` | ZotLit (copies Zotero items and highlights into Obsidian) or you |
+| 3 Drafts | `Writing/Drafts/`, one folder per article | You: write thoughts with sources and evidence |
+| 4 Published | `Writing/Published/` | You |
+| Wiki | `Wiki/` | AI, on request, from source notes and drafts; you may also edit |
 
 ```
-Zotero → References ──→ Drafts (you connect) → Published
-              │              │
-              └──→ Wiki ←────┘ (connections reusable in the next article)
-                    │
-                    └──→ starting point for the next Drafts
+Collect → References → Wiki ← Drafts → Published
+                              (your views)
 ```
-
-**The wiki is not built in advance; it grows from drafts.** A topic gets a page only when it recurs across articles or sources pile up.
 
 ## Folders
 

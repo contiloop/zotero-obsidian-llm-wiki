@@ -15,17 +15,17 @@ This Obsidian vault is an LLM wiki for economics writing.
 - If you discover additional work that may be useful but is not needed for the assigned task, report it rather than taking it on.
 
 ## Structure and flow
-| Step           | Where                                                        | Who writes                                                             | AI may          |
-| -------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------- | --------------- |
-| 1 Collect      | Zotero (outside the vault)                                   | User: saves sources, highlights, comments                              | read            |
-| 2 Source notes | `References/`                                                | ZotLit, a plugin that copies Zotero items and highlights into Obsidian | read            |
-| 3 Drafts       | `Writing/Drafts/`, one folder per article (`YYYY-MM_topic/`) | User: writes thoughts with sources and evidence                        | edit when asked |
-| 4 Published    | `Writing/Published/`                                         | User                                                                   | read            |
-| Wiki           | `Wiki/`                                                      | AI, from source-note highlights and drafts; the user may also edit     | maintain        |
+| Step           | Where                                                        | Who writes                                                            | AI may          |
+| -------------- | ------------------------------------------------------------ | --------------------------------------------------------------------- | --------------- |
+| 1 Collect      | Zotero, or any other way (e.g. a PDF saved directly)         | User: saves sources, highlights, comments                             | read            |
+| 2 Source notes | `References/`                                                | ZotLit (copies Zotero items and highlights into Obsidian) or the user | read            |
+| 3 Drafts       | `Writing/Drafts/`, one folder per article (`YYYY-MM_topic/`) | User: writes thoughts with sources and evidence                       | edit when asked |
+| 4 Published    | `Writing/Published/`                                         | User                                                                  | read            |
+| Wiki           | `Wiki/`                                                      | AI, from source-note highlights and drafts; the user may also edit    | maintain        |
 
 ```
-Zotero → References → Wiki ← Drafts → Published
-                             (user's views)
+Collect → References → Wiki ← Drafts → Published
+                              (user's views)
 ```
 
 Other files:
