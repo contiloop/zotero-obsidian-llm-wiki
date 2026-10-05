@@ -5,6 +5,8 @@
 References/**
 !References/Zotero/
 !References/Zotero/.gitkeep
+!References/Telegram/
+!References/Telegram/.gitkeep
 Wiki/*
 !Wiki/Index.md
 Writing/Drafts/*
@@ -28,9 +30,12 @@ Assets/*
 .DS_Store
 .env
 .env.*
+!System/Telegram/.env.example
 *.key
 *.pem
 .claude/
 .codex/
 CLAUDE.local.md
 System/.cache/
+System/Telegram/__pycache__/
+System/Telegram/**/__pycache__/

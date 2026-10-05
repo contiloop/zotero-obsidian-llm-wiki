@@ -6,6 +6,8 @@ properties:
     displayName: Title
   note.author:
     displayName: Author
+  note.channel:
+    displayName: Channel
   note.url:
     displayName: Source URL
   note.source_published:
@@ -31,6 +33,7 @@ views:
     order:
       - file.name
       - author
+      - channel
       - source_published
       - captured
       - url

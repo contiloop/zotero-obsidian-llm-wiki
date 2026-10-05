@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Optional schedule: run the ingest every 6 hours (Telegram keeps undelivered messages 24 h).
+     Install:  cp System/Telegram/com.jebi.telegram-ingest.plist.example ~/Library/LaunchAgents/com.jebi.telegram-ingest.plist
+               edit the paths below (script and log). The program is the Python.app inside Apple's command line tools,
+     because macOS lets you grant Full Disk Access to an .app but not to the python3 symlink, then: launchctl load ~/Library/LaunchAgents/com.jebi.telegram-ingest.plist
+     Remove:   launchctl unload ~/Library/LaunchAgents/com.jebi.telegram-ingest.plist -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.jebi.telegram-ingest</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python</string>
+    <string>/Users/YOU/path/to/vault/System/Telegram/ingest.py</string>
+  </array>
+  <key>StartInterval</key><integer>21600</integer>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/Users/YOU/path/to/vault/System/.cache/telegram/ingest.log</string>
+  <key>StandardErrorPath</key><string>/Users/YOU/path/to/vault/System/.cache/telegram/ingest.log</string>
+</dict>
+</plist>
