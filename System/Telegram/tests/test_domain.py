@@ -97,7 +97,7 @@ class RenderTests(unittest.TestCase):
         title = note_title(note)
         self.assertTrue(title.startswith("미국 9월 고용지표 - 비농업"))  # first line only, colon sanitized
         self.assertNotIn("경제 뉴스", title)
-        self.assertTrue(title.endswith("…"))
+        self.assertRegex(title, r"… \(\d{4}-\d{2}-\d{2}\)$")
         self.assertNotIn("https", title)
         md = render_note(note, title, ["Assets/Telegram/x.jpg"], datetime(2026, 10, 5))
         self.assertIn("source: telegram", md)
@@ -111,7 +111,7 @@ class RenderTests(unittest.TestCase):
 
     def test_bracketed_first_line(self):
         note = group_captures([parse_message(fwd_channel(1, "[조선 업종 밸류에이션]\n\n10월 2일 종가 기준"))], 180)[0]
-        self.assertEqual(note_title(note), "조선 업종 밸류에이션")
+        self.assertRegex(note_title(note), r"^조선 업종 밸류에이션 \(\d{4}-\d{2}-\d{2}\)$")
 
     def test_sanitize(self):
         self.assertEqual(sanitize_filename('a/b:c?d*e"f<g>h|i#j^k[l]m'), "a-b -cdefgh-ijk(l)m")

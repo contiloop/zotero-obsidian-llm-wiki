@@ -99,7 +99,7 @@ python3 System/Telegram/ingest.py            # write notes
 python3 System/Telegram/ingest.py --dry-run  # preview only
 ```
 
-A note appears in `References/Telegram/` named `<channel> - <first line>`, with `source: telegram`, `channel`, `published` (original post date), `captured`, `url` (link to the post, when the channel is public or a known private channel) and `links`. Photos are saved to `Assets/Telegram/`. Attached files such as PDFs are listed but not downloaded; save those to Zotero instead.
+A note appears in `References/Telegram/` named `<first line of the message> (<original post date>)`, with `source: telegram`, `channel`, `published` (original post date), `captured`, `url` (link to the post, when the channel is public or a known private channel) and `links`. Photos are saved to `Assets/Telegram/`. Attached files such as PDFs are listed but not downloaded; save those to Zotero instead.
 
 7. Put your own Telegram user id into `TELEGRAM_ALLOWED_USER_IDS` in `.env`, so messages from anyone else who finds the bot are ignored. To see your id, forward any message to @userinfobot, or run the ingest once with the variable empty and read `telegram_ids` in the created note (the number before `_`).
 

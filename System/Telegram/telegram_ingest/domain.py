@@ -235,7 +235,8 @@ def sanitize_filename(title: str) -> str:
 
 
 def note_title(note: Note) -> str:
-    """First line of the message, trimmed to TITLE_MAX. The channel stays in the frontmatter."""
+    """First line of the message, trimmed to TITLE_MAX, plus the original post date in parentheses.
+    The channel stays in the frontmatter."""
     text = note.text.strip()
     first = next((ln.strip() for ln in text.splitlines() if ln.strip()), "")
     first = URL_RE.sub("", first).strip(" -–—:·")
@@ -248,7 +249,8 @@ def note_title(note: Note) -> str:
     if not first:
         kind = "Photo" if note.photos else ("File" if note.documents else "Message")
         first = f"{kind} from {note.head.origin_name or 'Telegram'}"
-    return sanitize_filename(first) or note.head.telegram_id
+    date = (note.head.origin_date or note.head.date).strftime("%Y-%m-%d")
+    return f"{sanitize_filename(first) or note.head.telegram_id} ({date})"
 
 
 def _yaml_str(value: str) -> str:
