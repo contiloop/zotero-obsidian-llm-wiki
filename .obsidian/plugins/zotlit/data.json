@@ -16,6 +16,7 @@
   "server.port": 9091,
   "server.hostname": "127.0.0.1",
   "template.folder": "System/ZotLit",
+  "attachment.folder-path": "Assets/Zotero",
   "note.frontmatter-fields": [
     {
       "key": "title",

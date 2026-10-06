@@ -30,6 +30,8 @@ Collect → References → Wiki ← Drafts → Published
 ├── Writing/Drafts/      one folder per article (free format)
 ├── Writing/Published/   published articles
 ├── Assets/              images, charts, raw data
+├── Assets/Zotero/       images from Zotero area highlights (saved by ZotLit)
+├── Assets/Telegram/     images from Telegram messages
 └── System/
     ├── SETUP.md         rebuild this setup on a new machine
     ├── Templates/       Obsidian templates (Wiki)

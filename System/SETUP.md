@@ -51,7 +51,7 @@ Plugin code is not stored in this repository. Settings are (`.obsidian/plugins/z
 | published | `zt.date \| date: "%Y-%m-%d"` |
 | url | `zt.url` |
 
-Settings already stored in this repository: literature note folder `References/Zotero`, template folder `System/ZotLit` (color-grouped highlights, title-based file names).
+Settings already stored in this repository: literature note folder `References/Zotero`, template folder `System/ZotLit` (color-grouped highlights, title-based file names), attachment folder `Assets/Zotero` (images from area highlights).
 
 ## 4. Zotero
 

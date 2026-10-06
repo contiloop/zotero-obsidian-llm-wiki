@@ -61,7 +61,7 @@ do_base() {
   todo "Zotero: install Better BibTeX and ZotLit Companion (Tools → Plugins → Install Plugin From File), plus the browser connector. See System/SETUP.md §Zotero."
 
   head1 "Local-only files"
-  mkdir -p References/Zotero References/Telegram Wiki Writing/Drafts Writing/Published Assets/Telegram System/.cache/telegram
+  mkdir -p References/Zotero References/Telegram Wiki Writing/Drafts Writing/Published Assets/Zotero Assets/Telegram System/.cache/telegram
   if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     git update-index --skip-worktree Wiki/Index.md System/ingest-log.md 2>/dev/null && ok "Wiki/Index.md and System/ingest-log.md: local changes stay out of git"
   else
